@@ -1,0 +1,58 @@
+body {
+	display: grid;
+}
+
+.menuBanner{
+	height: 30px;
+	width: 100%;
+	border: thin;
+	border-style: solid;
+	border-color: slateblue;
+	padding: 5px;
+	display: inline-flex;
+	background-color: lightsalmon;
+}
+
+.menuBanner p {
+	margin: 0px;
+	font-size: 27px;
+	color: slateblue;
+}
+
+.pageTitle {
+	width: 59%;
+	margin: 0px;
+	text-align: center;
+}
+.smallArea {
+	width: 20%;
+}
+
+
+.intro {
+	text-align: center;	
+}
+
+.mainContent {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.mainContent img {
+	width: 250px;
+	vertical-align: middle;
+	margin: 5px;
+	transition: all .5s ease-in-out;
+	align-self: center;
+}
+
+img:hover {
+	transform: scale(1.5);
+}
+
+footer {
+	text-align: right;
+	font-style: italic;
+	clear: both;
+}
