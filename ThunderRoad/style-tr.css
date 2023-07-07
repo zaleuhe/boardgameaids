@@ -1,62 +1,8 @@
-/* Selector {
-	Property: value;
-	} */
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Rampart+One");
-body {
-	background-image: url(pics/Parchment.jpg);
-	background-size: cover;
+.token {
+	width: 100px;
+	margin: 1rem;
 }
 
-.mainContent {
-	
-}
-
-.principleContent {
-	border: .5rem solid black;
-	padding: 0rem 1rem;
-	width: 375px;
-}
-
-.humorContent {
-	margin: 10px;
-}
-
-.flavorImg {
-	width: 390px;
-}
-
-.noUnderline {
-	text-decoration: none; 
-}
-
-h2 {
-	color: Navy;
-	cursor: pointer;
-	font-family: 'Rampart One';
-}
-
-li {
-	list-style: none;
-	border-style: solid;
-	border: 2px outset;
-	border-radius: 3px;
-	padding: 3px 10px;
-	margin: 3px 5px;
-	text-align-last: center;
-}
-
-li:hover {
-	font-weight: bold;
-}
-
-img {
-	text-align-last: center;
-	width: 390px;
-}
-
-footer {
-	text-align: right;
-	font-style: italic;
-	clear: both;
+button {
+	width: 100%;
 }

@@ -1,116 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Thunder Road Vendetta</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style-tr.css">
-</head>
-<body>
+	<head>
+		<title>Thunder Road Vendetta</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="style-tr.css">
+	</head>
+	<body>
 
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav">
-      <h4>Thunder Road: Vendetta</h4>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="https://boardgamegeek.com/boardgame/342070/thunder-road-vendetta">BGG Page</a></li>
-        <li><a href="#section2">Terrain</a></li>
-        <li><a href="#section3">Obstacles</a></li>
-        <li><a href="#section3">Hazards</a></li>
-        <li><a href="#section3">Damage Tokens</a></li>
-      </ul><br>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search Blog..">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
-      </div>
-    </div>
-
-    <div class="col-sm-9">
-
+		<img src="pics/title.png" width="100%">
+		<hr>
+		<p>All information and resources pull from the rule book posted on <a href="https://boardgamegeek.com/filepage/259112/thunder-road-vendetta-maximum-chrome-rulebook-engl">Board Game Geek</a>.  Please notify me if this open rule book is ever pulled, and I'll pull this site.</p>
+		<hr>
 		<p>
-		  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-		    Link with href
-		  </a>
-		  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-		    Button with data-bs-target
+		  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTerrain" aria-expanded="false" aria-controls="collapseTerrain">
+		    TERRAIN
 		  </button>
 		</p>
-		<div class="collapse" id="collapseExample">
+		<div class="collapse" id="collapseTerrain">
 		  <div class="card card-body">
-		    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+				<table class="table table-striped">
+					<tr>
+		    			<td class="token"><img src="pics/road.png" width="100%"></td>
+		    			<td><b>Road:</b>  Costs 1 move to enter. May allow road die bonus.</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/offroad.png" width="100%"></td>
+		    			<td><b>Off-Road:</b>  Costs 1 move to enter. </td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/mud.png" width="100%"></td>
+		    			<td><b>Mud:</b>  Costs 2 moves to enter. You may still enter a muddy space if you only have 1 move left. </td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/impassable.png" width="100%"></td>
+		    			<td><b>Impassable:</b>  May show different illustrations, but all impassable spaces are marked with a double yellow border. A road vehicle that enters an impassable space is <b><em>eliminated</em></b>.</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/hazard.png" width="100%"></td>
+		    			<td><b>Hazard:</b>  Red double triangle symbols show where to place hazard tokens only when a new road tile is added. If there is no hazard token when entering this space, treat the space as if there were no symbol.</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/goo.png" width="100%"></td>
+		    			<td><b>Goo:</b>  When a road vehicle enters a toxic goo space, it stops and loses the rest of its moves.</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/glass.png" width="100%"></td>
+		    			<td><b>Desert Glass:</b>  When a road vehicle enters a desert glass space, it immediately moves one space in the direction it was already moving without using any moves. </td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/ramp.png" width="100%"></td>
+		    			<td><b>Ramp:</b>  A road vehicle can only enter a ramp from the space directly behind the ramp. When it does, roll the stunt die and move that many spaces directly forward, ignoring all spaces in between. After landing, lose all remaining moves. If a road vehicle enters a ramp space from any other space, the road vehicle is eliminated. <br>  <em>House Rule:</em>  If discovered when flipping over a hazard, and vehicle hit it from the ramp's left or right back arc; roll the Shooting Die.  If your size is shown, destory the ramp instead of the vehicle and continue your turn.</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/fire.png" width="100%"></td>
+		    			<td><b>Fire!:</b>  When a road vehicle enters this space, it catches on fire! Place an ON FIRE! token on that vehicle’s dashboard. A vehicle that is on fire must roll the fire die before moving during their Move step.</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/salt.png" width="100%"></td>
+		    			<td><b>Salt Flats:</b>  When a road vehicle enters a salt flat space, it may use the road die this turn REGARDLESS of whether or not it moved on only road spaces.</td>
+		  			</tr>
+				</table>
 		  </div>
 		</div>
-    	
-      <h4><small>RECENT POSTS</small></h4>
-      <hr>
-      <h2>I Love Food</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
-      <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
-      <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><br>
-      
-      <h4><small>RECENT POSTS</small></h4>
-      <hr>
-      <h2>Officially Blogging</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
-      <h5><span class="label label-success">Lorem</span></h5><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <hr>
 
-      <h4>Leave a Comment:</h4>
-      <form role="form">
-        <div class="form-group">
-          <textarea class="form-control" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Submit</button>
-      </form>
-      <br><br>
-      
-      <p><span class="badge">2</span> Comments:</p><br>
-      
-      <div class="row">
-        <div class="col-sm-2 text-center">
-          <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-        </div>
-        <div class="col-sm-10">
-          <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
-          <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <br>
-        </div>
-        <div class="col-sm-2 text-center">
-          <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-        </div>
-        <div class="col-sm-10">
-          <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
-          <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <br>
-          <p><span class="badge">1</span> Comment:</p><br>
-          <div class="row">
-            <div class="col-sm-2 text-center">
-              <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-            </div>
-            <div class="col-xs-10">
-              <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
-              <p>Me too! WOW!</p>
-              <br>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<footer class="container-fluid">
-  <p>Footer Text</p>
-</footer>
+		<p>
+		  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHazards" aria-expanded="false" aria-controls="collapseHazards">
+		    HAZARDS
+		  </button>
+		</p>
+		<div class="collapse" id="collapseHazards">
+		  <div class="card card-body">
+		    <p>If a normal train space, it becomes that type of space</p>
+		    <table class="table table-striped">
+					<tr>
+		    			<td class="token"><img src="pics/wreck.png" width="100%"></td>
+		    			<td><b>Wreck:</b>  <em>Replace with a wreck figure</em><br>Place the moving road vehicle on top of the wreck and resolve the slam.</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/mine.png" width="100%"></td>
+		    			<td><b>Wreck:</b>  <em>Discard after resolving</em><br>The road vehicle takes a damage token. Resolve the effect, if any. That vehicle loses any remaining moves.</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/mine.png" width="100%"></td>
+		    			<td><b>Oil Slick:</b>  <em>Remains on the board</em><br>Roll the direction die and move your road vehicle one space in that direction. This does not cost a move, and the vehicle continues moving if it has moves remaining. This space also becomes a road space.</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/ramp.png" width="100%"></td>
+		    			<td><b>Ramp:</b>  <em>Remains on the board</em><br><em>House Rule:</em>  When this hazard is discovered, and the triggering vehicle hit it from the ramp's left or right back arc; roll the Shooting Die.  If your size is shown, then destory the ramp instead of the vehicle.  Otherwise, resolve as a normal ramp; roll the stunt die and move that many spaces directly forward, ignoring all spaces in between. After landing, lose all remaining moves. If a road vehicle enters a ramp space from any other space, the road vehicle is eliminated. </td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/pitTrap.png" width="100%"></td>
+		    			<td><b>Pit Trap:</b>  <em>Remains on the board and treated as an impassable space.</em><br> Roll the shooting die against the road vehicle that revealed the trap. If it’s a hit, the vehicle is  eliminated. Otherwise, it may continue moving if it has moves left.</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/Quake.png" width="100%"></td>
+		    			<td><b>Quake:</b>  <em>Discard after resolving.</em><br> Roll the direction die. Move all road vehicles one space in that direction, simultaneously.</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/worm.png" width="100%"></td>
+		    			<td><b>Sand Worm:</b>  <em>Discard after effect is resolving.</em><br> : Eliminate the road vehicle that is the farthest back on the board. If more than one vehicle is tied for that position, eliminate each of them.</td>
+		  			</tr>
+				</table>
+		  </div>
+		</div>
 
-</body>
+		<p>
+		<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDamage" aria-expanded="false" aria-controls="collapseDamage">
+		    DAMAGE
+		  </button>
+		</p>
+		<div class="collapse" id="collapseDamage">
+		  <div class="card card-body">
+		    <table class="table table-striped">
+					<tr>
+		    			<td class="token"><img src="pics/dent.png" width="100%"></td>
+		    			<td><b>Dent:</b>  No effect (other than filling a damage slot).</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/shrapnel.png" width="100%"></td>
+		    			<td><b>Shrapnel:</b>  Roll the direction die. Starting at the car that took damage, look in that direction in a straight line until you reach the first road vehicle. Apply a damage to that vehicle (even one of your own). The shrapnel passes through any terrain, even impassable. If there is no road vehicle in that direction and you reach the edge of the board, nothing happens</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/skid.png" width="100%"></td>
+		    			<td><b>Skid:</b>  Move one space in the direction shown.</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/blastoff.png" width="100%"></td>
+		    			<td><b>Blast Off:</b>  Roll the direction die and the stunt die. Move that many spaces in the indicated direction. Ignore all spaces in between. You are still affected by the space you move into. </td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/dazed.png" width="100%"></td>
+		    			<td><b>Dazed:</b>  Roll the stunt die. Move your car that many spaces, rolling the direction die for each space of movement to determine direction. You still are affected by the terrain you move onto (like using two moves for entering mud). If you enter a space that causes your car to lose its moves, the dazed effect ends. (For example, slamming into another road vehicle.)</td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/ongoingEffect.png" width="100%"></td>
+		    			<td><b>Ongoing Effect:</b>  When you draw an ongoing effect damage, draw an ongoing effect card and place it face up in an available damage slot. Place the damage token face down on top of it. The card remains in effect until that damage token is repaired. When that damage is repaired, remove both the damage token AND the ongoing effect card. Place them in their respective discard piles. </td>
+		  			</tr>
+		  			<tr>
+		    			<td class="token"><img src="pics/onFire.png" width="100%"></td>
+		    			<td><b>On Fire:</b>  The car catches on fire. Take an ON FIRE! token from the supply and place it on that car’s dashboard. Then, place the damage token face down on the car's dashboard. Cars that are on fire must roll the fire die before moving during their move step.</td>
+		  			</tr>
+				</table>
+		  </div>
+		</div>
+			<footer>
+				<br>
+				<br>
+				<p>Site created and maintained by Allen Herring, aleuhe@yahoo.com</p>
+			</footer>
+
+	</body>
 </html>
