@@ -1,157 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Thunder Road Vendetta</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="style-tr.css">
-	</head>
-	<body>
+<head>
+	<title>Thunder Road Vendetta</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style-tr.css">
+</head>
+<body>
 
-		<img src="pics/title.png" width="100%">
-		<hr>
-		<p>All information and resources pull from the rule book posted on <a href="https://boardgamegeek.com/filepage/259112/thunder-road-vendetta-maximum-chrome-rulebook-engl">Board Game Geek</a>.  Please notify me if this open rule book is ever pulled, and I'll pull this site.</p>
-		<hr>
-		<p>
-		  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTerrain" aria-expanded="false" aria-controls="collapseTerrain">
-		    TERRAIN
-		  </button>
-		</p>
-		<div class="collapse" id="collapseTerrain">
-		  <div class="card card-body">
-				<table class="table table-striped">
-					<tr>
-		    			<td class="token"><img src="pics/road.png" width="100%"></td>
-		    			<td><b>Road:</b>  Costs 1 move to enter. May allow road die bonus.</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/offroad.png" width="100%"></td>
-		    			<td><b>Off-Road:</b>  Costs 1 move to enter. </td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/mud.png" width="100%"></td>
-		    			<td><b>Mud:</b>  Costs 2 moves to enter. You may still enter a muddy space if you only have 1 move left. </td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/impassable.png" width="100%"></td>
-		    			<td><b>Impassable:</b>  May show different illustrations, but all impassable spaces are marked with a double yellow border. A road vehicle that enters an impassable space is <b><em>eliminated</em></b>.</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/hazard.png" width="100%"></td>
-		    			<td><b>Hazard:</b>  Red double triangle symbols show where to place hazard tokens only when a new road tile is added. If there is no hazard token when entering this space, treat the space as if there were no symbol.</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/goo.png" width="100%"></td>
-		    			<td><b>Goo:</b>  When a road vehicle enters a toxic goo space, it stops and loses the rest of its moves.</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/glass.png" width="100%"></td>
-		    			<td><b>Desert Glass:</b>  When a road vehicle enters a desert glass space, it immediately moves one space in the direction it was already moving without using any moves. </td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/ramp.png" width="100%"></td>
-		    			<td><b>Ramp:</b>  A road vehicle can only enter a ramp from the space directly behind the ramp. When it does, roll the stunt die and move that many spaces directly forward, ignoring all spaces in between. After landing, lose all remaining moves. If a road vehicle enters a ramp space from any other space, the road vehicle is eliminated. <br>  <em>House Rule:</em>  If discovered when flipping over a hazard, and vehicle hit it from the ramp's left or right back arc; roll the Shooting Die.  If your size is shown, destory the ramp instead of the vehicle and continue your turn.</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/fire.png" width="100%"></td>
-		    			<td><b>Fire!:</b>  When a road vehicle enters this space, it catches on fire! Place an ON FIRE! token on that vehicle’s dashboard. A vehicle that is on fire must roll the fire die before moving during their Move step.</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/salt.png" width="100%"></td>
-		    			<td><b>Salt Flats:</b>  When a road vehicle enters a salt flat space, it may use the road die this turn REGARDLESS of whether or not it moved on only road spaces.</td>
-		  			</tr>
-				</table>
-		  </div>
+	<img src="pics/title.png" width="100%">
+	<hr>
+	<p>All information and resources pull from the rule book posted on <a href="https://boardgamegeek.com/filepage/259112/thunder-road-vendetta-maximum-chrome-rulebook-engl">Board Game Geek</a>.  Please notify me if this open rule book is ever pulled, and I'll pull this site.</p>
+	<hr>
+	<p>
+		<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTerrain" aria-expanded="false" aria-controls="collapseTerrain">
+			TERRAIN
+		</button>
+	</p>
+	<div class="collapse" id="collapseTerrain">
+		<div class="floatTable">
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/road.png" width="100%"></td>
+					<td><b>Road:</b>  Costs 1 move to enter. May allow road die bonus.</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/offroad.png" width="100%"></td>
+					<td><b>Off-Road:</b>  Costs 1 move to enter. </td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/mud.png" width="100%"></td>
+					<td><b>Mud:</b>  Costs 2 moves to enter. You may still enter a muddy space if you only have 1 move left. </td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/impassable.png" width="100%"></td>
+					<td><b>Impassable:</b>  May show different illustrations, but all impassable spaces are marked with a double yellow border. A road vehicle that enters an impassable space is <b><em>eliminated</em></b>.</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/hazard.png" width="100%"></td>
+					<td><b>Hazard:</b>  Red double triangle symbols show where to place hazard tokens only when a new road tile is added. If there is no hazard token when entering this space, treat the space as if there were no symbol.</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/goo.png" width="100%"></td>
+					<td><b>Goo:</b>  When a road vehicle enters a toxic goo space, it stops and loses the rest of its moves.</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/glass.png" width="100%"></td>
+					<td><b>Desert Glass:</b>  When a road vehicle enters a desert glass space, it immediately moves one space in the direction it was already moving without using any moves. </td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/ramp.png" width="100%"></td>
+					<td><b>Ramp:</b>  A road vehicle can only enter a ramp from the space directly behind the ramp. When it does, roll the stunt die and move that many spaces directly forward, ignoring all spaces in between. After landing, lose all remaining moves. If a road vehicle enters a ramp space from any other space, the road vehicle is eliminated.</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/fire.png" width="100%"></td>
+					<td><b>Fire!:</b>  When a road vehicle enters this space, it catches on fire! Place an ON FIRE! token on that vehicle’s dashboard. A vehicle that is on fire must roll the fire die before moving during their Move step.</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/salt.png" width="100%"></td>
+					<td><b>Salt Flats:</b>  When a road vehicle enters a salt flat space, it may use the road die this turn REGARDLESS of whether or not it moved on only road spaces.</td>
+				</tr>
+			</table>
 		</div>
-
-
-		<p>
-		  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHazards" aria-expanded="false" aria-controls="collapseHazards">
-		    HAZARDS
-		  </button>
-		</p>
-		<div class="collapse" id="collapseHazards">
-		  <div class="card card-body">
-		    <p>If a normal train space, it becomes that type of space</p>
-		    <table class="table table-striped">
-					<tr>
-		    			<td class="token"><img src="pics/wreck.png" width="100%"></td>
-		    			<td><b>Wreck:</b>  <em>Replace with a wreck figure</em><br>Place the moving road vehicle on top of the wreck and resolve the slam.</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/mine.png" width="100%"></td>
-		    			<td><b>Wreck:</b>  <em>Discard after resolving</em><br>The road vehicle takes a damage token. Resolve the effect, if any. That vehicle loses any remaining moves.</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/mine.png" width="100%"></td>
-		    			<td><b>Oil Slick:</b>  <em>Remains on the board</em><br>Roll the direction die and move your road vehicle one space in that direction. This does not cost a move, and the vehicle continues moving if it has moves remaining. This space also becomes a road space.</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/ramp.png" width="100%"></td>
-		    			<td><b>Ramp:</b>  <em>Remains on the board</em><br><em>House Rule:</em>  When this hazard is discovered, and the triggering vehicle hit it from the ramp's left or right back arc; roll the Shooting Die.  If your size is shown, then destory the ramp instead of the vehicle.  Otherwise, resolve as a normal ramp; roll the stunt die and move that many spaces directly forward, ignoring all spaces in between. After landing, lose all remaining moves. If a road vehicle enters a ramp space from any other space, the road vehicle is eliminated. </td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/pitTrap.png" width="100%"></td>
-		    			<td><b>Pit Trap:</b>  <em>Remains on the board and treated as an impassable space.</em><br> Roll the shooting die against the road vehicle that revealed the trap. If it’s a hit, the vehicle is  eliminated. Otherwise, it may continue moving if it has moves left.</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/quake.png" width="100%"></td>
-		    			<td><b>Quake:</b>  <em>Discard after resolving.</em><br> Roll the direction die. Move all road vehicles one space in that direction, simultaneously.</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/worm.png" width="100%"></td>
-		    			<td><b>Sand Worm:</b>  <em>Discard after effect is resolving.</em><br> : Eliminate the road vehicle that is the farthest back on the board. If more than one vehicle is tied for that position, eliminate each of them.</td>
-		  			</tr>
-				</table>
-		  </div>
+	</div>
+	<p>
+		<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHazards" aria-expanded="false" aria-controls="collapseHazards">
+			HAZARDS
+		</button>
+	</p>
+	<div class="collapse" id="collapseHazards">
+		<p>If a basic terrain, it becomes that type of space.</p>
+		<div class="floatTable">
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/oil.png" width="100%"></td>
+					<td><b>Oil Slick:</b>  <em>Remains on the board</em><br>Roll the direction die and move your road vehicle one space in that direction. This does not cost a move, and the vehicle continues moving if it has moves remaining. This space also becomes a road space.</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/wreck.png" width="100%"></td>
+					<td><b>Wreck:</b>  <em>Replace with a wreck figure</em><br>Place the moving road vehicle on top of the wreck and resolve the slam.</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/mine.png" width="100%"></td>
+					<td><b>Mine:</b>  <em>Discard after resolving</em><br>The road vehicle takes a damage token. Resolve the effect, if any. That vehicle loses any remaining moves.</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/ramp.png" width="100%"></td>
+					<td><b>Ramp:</b>  <em>Remains on the board</em><br><em>House Rule:</em>  When this hazard is discovered, and the triggering vehicle hit it from the ramp's left or right back arc; roll the Shooting Die.  If your size is shown, then destory the ramp instead of the vehicle.  Otherwise, resolve as a normal ramp; roll the stunt die and move that many spaces directly forward, ignoring all spaces in between. After landing, lose all remaining moves. If a road vehicle enters a ramp space from any other space, the road vehicle is eliminated. </td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/pitTrap.png" width="100%"></td>
+					<td><b>Pit Trap:</b>  <em>Remains on the board and treated as an impassable space.</em><br> Roll the shooting die against the road vehicle that revealed the trap. If it’s a hit, the vehicle is  eliminated. Otherwise, it may continue moving if it has moves left.</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/quake.png" width="100%"></td>
+					<td><b>Quake:</b>  <em>Discard after resolving.</em><br> Roll the direction die. Move all road vehicles one space in that direction, simultaneously.</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/worm.png" width="100%"></td>
+					<td><b>Sand Worm:</b>  <em>Discard after effect is resolving.</em><br> : Eliminate the road vehicle that is the farthest back on the board. If more than one vehicle is tied for that position, eliminate each of them.</td>
+				</tr>
+			</table>
 		</div>
+	</div>
 
-		<p>
+	<p>
 		<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDamage" aria-expanded="false" aria-controls="collapseDamage">
-		    DAMAGE
-		  </button>
-		</p>
-		<div class="collapse" id="collapseDamage">
-		  <div class="card card-body">
-		    <table class="table table-striped">
-					<tr>
-		    			<td class="token"><img src="pics/dent.png" width="100%"></td>
-		    			<td><b>Dent:</b>  No effect (other than filling a damage slot).</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/shrapnel.png" width="100%"></td>
-		    			<td><b>Shrapnel:</b>  Roll the direction die. Starting at the car that took damage, look in that direction in a straight line until you reach the first road vehicle. Apply a damage to that vehicle (even one of your own). The shrapnel passes through any terrain, even impassable. If there is no road vehicle in that direction and you reach the edge of the board, nothing happens</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/skid.png" width="100%"></td>
-		    			<td><b>Skid:</b>  Move one space in the direction shown.</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/blastoff.png" width="100%"></td>
-		    			<td><b>Blast Off:</b>  Roll the direction die and the stunt die. Move that many spaces in the indicated direction. Ignore all spaces in between. You are still affected by the space you move into. </td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/dazed.png" width="100%"></td>
-		    			<td><b>Dazed:</b>  Roll the stunt die. Move your car that many spaces, rolling the direction die for each space of movement to determine direction. You still are affected by the terrain you move onto (like using two moves for entering mud). If you enter a space that causes your car to lose its moves, the dazed effect ends. (For example, slamming into another road vehicle.)</td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/ongoingEffect.png" width="100%"></td>
-		    			<td><b>Ongoing Effect:</b>  When you draw an ongoing effect damage, draw an ongoing effect card and place it face up in an available damage slot. Place the damage token face down on top of it. The card remains in effect until that damage token is repaired. When that damage is repaired, remove both the damage token AND the ongoing effect card. Place them in their respective discard piles. </td>
-		  			</tr>
-		  			<tr>
-		    			<td class="token"><img src="pics/onFire.png" width="100%"></td>
-		    			<td><b>On Fire:</b>  The car catches on fire. Take an ON FIRE! token from the supply and place it on that car’s dashboard. Then, place the damage token face down on the car's dashboard. Cars that are on fire must roll the fire die before moving during their move step.</td>
-		  			</tr>
-				</table>
-		  </div>
+			DAMAGE
+		</button>
+	</p>
+	<div class="collapse" id="collapseDamage">
+		<div class="floatTable">
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/dent.png" width="100%"></td>
+					<td class="leftspacing"><b>Dent:</b>  No effect (other than filling a damage slot).</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/shrapnel.png" width="100%"></td>
+					<td class="leftspacing"><b>Shrapnel:</b>  Roll the direction die. Starting at the car that took damage, look in that direction in a straight line until you reach the first road vehicle. Apply a damage to that vehicle (even one of your own). The shrapnel passes through any terrain, even impassable. If there is no road vehicle in that direction and you reach the edge of the board, nothing happens</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/skid.png" width="100%"></td>
+					<td class="leftspacing"><b>Skid:</b>  Move one space in the direction shown.</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/blastoff.png" width="100%"></td>
+					<td class="leftspacing"><b>Blast Off:</b>  Roll the direction die and the stunt die. Move that many spaces in the indicated direction. Ignore all spaces in between. You are still affected by the space you move into. </td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/dazed.png" width="100%"></td>
+					<td class="leftspacing"><b>Dazed:</b>  Roll the stunt die. Move your car that many spaces, rolling the direction die for each space of movement to determine direction. You still are affected by the terrain you move onto (like using two moves for entering mud). If you enter a space that causes your car to lose its moves, the dazed effect ends. (For example, slamming into another road vehicle.)</td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/ongoingEffect.png" width="100%"></td>
+					<td class="leftspacing"><b>Ongoing Effect:</b>  When you draw an ongoing effect damage, draw an ongoing effect card and place it face up in an available damage slot. Place the damage token face down on top of it. The card remains in effect until that damage token is repaired. When that damage is repaired, remove both the damage token AND the ongoing effect card. Place them in their respective discard piles. </td>
+				</tr>
+			</table>
+			<table class="card card-body floating">
+				<tr>
+					<td class="token"><img src="pics/onFire.png" width="100%"></td>
+					<td class="leftspacing"><b>On Fire:</b>  The car catches on fire. Take an ON FIRE! token from the supply and place it on that car’s dashboard. Then, place the damage token face down on the car's dashboard. Cars that are on fire must roll the fire die before moving during their move step.</td>
+				</tr>
+			</table>
 		</div>
-			<footer>
-				<br>
-				<br>
-				<p>Site created and maintained by Allen Herring, aleuhe@yahoo.com</p>
-			</footer>
+	</div>
 
-	</body>
+
+	<footer>
+		<br>
+		<br>
+		<p>Site created and maintained by Allen Herring, aleuhe@yahoo.com</p>
+	</footer>
+
+</body>
 </html>

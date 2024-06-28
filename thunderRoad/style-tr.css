@@ -3,6 +3,37 @@
 	margin: 1rem;
 }
 
+.card {
+	margin: .5rem;
+}
+
+.floatTable {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.floating {
+	width: 49%;
+	vertical-align: middle;
+	margin: 5px;
+	transition: all .5s ease-in-out;
+	align-self: center;
+	border-style:solid;
+	border-width: thin;
+	padding: .5rem;
+}
+
+.leftspacing {
+	padding-left:.5rem;
+}
+
+@media (max-width: 850px) {
+	.floating {
+		width: 100%;
+	}
+}
+
 button {
 	width: 100%;
 }
